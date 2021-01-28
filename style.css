@@ -1,0 +1,226 @@
+
+/* design for width : 1440px */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-size: 15px;
+}
+body{
+    font-family: 'Spartan', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    
+}
+
+#intro::before{
+
+    content: "";
+    background: url(images/bg-pattern-top-desktop.svg) no-repeat center center/cover;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: -60%;
+    height: 100%;
+    width: 100%;
+
+
+}
+#intro{
+    display: flex;
+    width: 80vw;
+    height: 50%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    width: 29vw;
+    height: 250px;
+}
+
+#about h1{
+    color : hsl(300, 43%, 22%);
+    font-size: 2.6rem;
+    width: 24.62vw;
+    padding: 10px 0;
+}
+
+#about p{
+    color:hsl(303, 10%, 53%);
+    font-size: 1.3rem;
+}
+
+ /* ratings box */
+#ratings{
+    width: 32vw;
+}
+
+.rating-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 5px 0;
+    width: 28vw;
+    height: 40px;
+    margin: 0 0 15px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    
+}
+
+.rating-box h4{
+    color : hsl(300, 43%, 22%);
+}
+.stars{
+    padding: 0px 20px;
+
+}
+#box1{
+    position: relative;
+    right: 8vw;
+}
+#box2{
+    position: relative;
+    right: 4vw;
+}
+
+/* 2nd section ( reviewers peofile) */
+#socialprofile::after{
+
+    content: "";
+    background: url(images/bg-pattern-bottom-desktop.svg) no-repeat center center/cover;
+    z-index: -1;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    height: 100%;
+    width: 75%;
+    background-attachment: fixed;
+     overflow: hidden;
+    
+}
+#socialprofile{
+    display: flex;
+    width: 80vw;
+    height: 50%;
+    align-items: center;
+    justify-content: space-between;
+    padding:  50px 0;
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    width: 21.5vw;
+    padding: 40px 25px;
+    border-radius: 10px;
+    background-color: hsl(300, 43%, 22%);    
+    color: hsl(0, 0%, 100%);
+}
+
+.name-id{
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.name-id img{
+    border-radius: 50%;
+    width: 15%;
+}
+
+.buyer-name{
+    padding: 0px 30px;  
+
+}
+#buyer{
+    color: hsl(333, 80%, 67%);
+    
+}
+.reviews {
+    
+    padding: 5px;
+    line-height: 1.5;
+
+ }
+ 
+ #profile_id-1{
+     position: relative;
+     bottom: 40px;
+    }
+    #profile_id-2{
+        
+        position: relative;
+    bottom: 20px;
+}
+ #profile_id-3{
+     position: relative;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 20px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+
+}
+
+/* for tablets */
+@media screen and (min-width: 760px )and (max-width: 1230px){
+
+#intro{
+    padding-bottom: 0px;
+}
+#about h1{
+    padding: 20px 0;
+    font-size: 1.8rem;
+    width: 27vw;
+}
+#about p{
+    font-size: 1.2rem;
+}
+
+#ratings{
+    width: 40vw;
+}
+
+.stars{
+    padding: 0px 10px;
+
+}
+.stars img{
+    width: 13%;
+}
+.rating-box{
+
+    width: 36vw;
+    height: 35px;
+    font-size: 0.8rem;
+}
+
+.profile-card{
+    width: 20.5vw;
+    /* height: 2vw; */
+    padding: 30px 20px;
+    
+}
+
+.name-id{
+    font-size: 0.7rem;
+    padding-bottom: 15px;
+}
+
+}
